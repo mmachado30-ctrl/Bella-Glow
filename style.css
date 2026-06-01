@@ -1,0 +1,99 @@
+/* Configurações Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf6f6;
+    color: #4a3b32;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #f3d1cb;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 3px solid #e1b3a8;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #6d4c41;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    font-style: italic;
+    color: #8d6e63;
+}
+
+/* Conteúdo Principal */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(243, 209, 203, 0.5);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    color: #6d4c41;
+}
+
+/* Botão Temático */
+button {
+    background-color: #d81b60;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    box-shadow: 0 4px 10px rgba(216, 27, 96, 0.3);
+}
+
+button:hover {
+    background-color: #ad1457;
+    transform: scale(1.05);
+}
+
+/* Classes Utilitárias */
+.escondido {
+    display: none;
+}
+
+.sucesso {
+    margin-top: 20px;
+    color: #2e7d32;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f3d1cb;
+    color: #6d4c41;
+    font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
